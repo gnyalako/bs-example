@@ -2,7 +2,7 @@ spring:
   application:
     name: mstruckaccount
 
-tradeaccount:
+cbp-ace-truck-account:
   endpoint: http://localhost:9000
 
 server:

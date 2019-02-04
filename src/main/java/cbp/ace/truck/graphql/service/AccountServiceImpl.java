@@ -2,10 +2,12 @@ package cbp.ace.truck.graphql.service;
 
 import cbp.ace.truck.graphql.dto.AccountDto;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
+@Profile("!test")
 public class AccountServiceImpl implements AccountService{
     @Value("${cbp-ace-truck-account.endpoint}")
     private String endpoint;
