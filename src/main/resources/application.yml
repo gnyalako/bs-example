@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mstruckaccount
+
+server:
+  port: 8000
+
+cbp-ace-truck-account:
+  endpoint: http://localhost:9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
