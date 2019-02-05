@@ -1,19 +1,13 @@
 package cbp.ace.truck.graphql;
 
-import cbp.ace.truck.graphql.config.AppConfig;
-import cbp.ace.truck.graphql.service.AccountService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -27,7 +21,7 @@ import java.net.URI;
 @RunWith(SpringRunner.class)
 @ActiveProfiles("test")
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class AccountControllerIntegrationTest {
+public class ApplicationTest {
     @LocalServerPort
     private int port;
 
